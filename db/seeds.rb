@@ -22,7 +22,7 @@ User.create(
 	)
 end
 
-# 100.times do
-	# user = User.all.sample
-	# user.tweets.create(body: Faker::Hacker.say_something_smart)
-# end
+100.times do
+	user = User.all.sample
+	user.tweets.create(body: Faker::Hacker.say_something_smart)
+end
